@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class FrontendHelpersTest < ActiveSupport::TestCase
-  test "truth" do
-    assert_kind_of Module, FrontendHelpers
+
+  include FrontendHelpers::Html5Helper
+
+  test "" do
+
   end
+
 end
