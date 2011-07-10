@@ -1,6 +1,7 @@
 require "frontend-helpers/html5_helper"
 require "frontend-helpers/metatag_helper"
 require "frontend-helpers/services_helper"
+require "asset-helpers/rails"
 
 # == Frontend Helper Module
 #

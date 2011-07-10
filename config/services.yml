@@ -1,0 +1,95 @@
+:google:
+  :development:
+    :account_id: ""
+    :site_name: ""
+    :maps_api_key: ""
+
+  :test:
+    :account_id: ""
+    :site_name: ""
+    :maps_api_key: ""
+
+  :production:
+    :account_id: ""
+    :site_name: ""
+    :maps_api_key: ""
+
+
+:chartbeat:
+  :development:
+    :uid: ""
+    :domain: ""
+
+  :test:
+    :uid: ""
+    :domain: ""
+
+  :production:
+    :uid: ""
+    :domain: ""
+
+
+:inspectlet:
+  :development:
+    :setup: false
+
+  :test:
+    :setup: false
+
+  :production:
+    :setup: false
+
+
+:mixpanel:
+  :development:
+    :init: ""
+
+  :test:
+    :init: ""
+
+  :production:
+    :init: ""
+
+
+:woopra:
+  :development:
+    :domain: ""
+
+  :test:
+    :domain: ""
+
+  :production:
+    :domain: ""
+
+
+:kissmetrics:
+  :development:
+    :setup: false
+
+  :test:
+    :setup: false
+
+  :production:
+    :setup: false
+
+
+:quantcast:
+  :development:
+    :qacct: ""
+
+  :test:
+    :qacct: ""
+
+  :production:
+    :qacct: ""
+
+
+:olark:
+  :development:
+    :identify: ""
+
+  :test:
+    :identify: ""
+
+  :production:
+    :identify: ""
