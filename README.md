@@ -71,9 +71,20 @@ This will overwrite the current title with whatever you'd like. This is the list
     :"og:country_name" => @meta_og_country_name,
     :"og:phone_number" => @meta_og_phone_number
 
+
 ### Services.yml ###
 
-TODO: Write how to use this
+Before you start adding your content to the `services.yml` you should probably start by including the helper in your `application_controller.rb` add:
+
+    include FrontendHelpers::ServicesHelper
+
+Next where ever you want the services javascript to appear (I'd recommend using it at the end of the body) use:
+
+    - webservice [:google, :olark, :chartbeat, :inspectlet, :mixpanel, :woopra, :kissmetrics, :quantcast]
+
+This example shows all of the services that can be included although you will not see any of them unless you have added the necessary information in the `services.yml` you can remove any of them from the array if need be.
+
+Inside the `services.yml` you will find all of variables that should be set to use each one of the services. All of them are pretty self explanatory and the keys can be gotten from each service.
 
 
 ### Assets ###
