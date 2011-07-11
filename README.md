@@ -24,6 +24,18 @@ This should come up and tell you that it's copying `config/settings.yml`, `confi
 
 Then you can start editing them:
 
+
+### HTML5 ###
+
+before you use the HTML5 HTML tag as Paul Irish  `application_controller.rb` add:
+
+    include FrontendHelpers::Html5Helper
+
+Then in your application.html.haml instead of using `%html` use
+
+    - html_tag class: 'no-js' do
+
+
 ### Settings.yml ###
 
 Before you start adding your content to the `settings.yml` you should probably start by including the helper in your `application_controller.rb` add:
@@ -89,7 +101,42 @@ Inside the `services.yml` you will find all of variables that should be set to u
 
 ### Assets ###
 
-TODO: Write how to use this
+As far as the assets and the all the included libraries I've added a few of my favorite and most used javascript libraries, those are:
+
+[Backbone](http://documentcloud.github.com/backbone/)
+[Underscore](http://documentcloud.github.com/underscore/)
+[DD Belated PNG](http://www.dillerdesign.com/experiment/DD_belatedPNG/)
+[jQuery Asynchronous Plugin](http://mess.genezys.net/jquery/jquery.async.php)
+[jQuery Cookie plugin](https://github.com/carhartl/jquery-cookie)
+[jQuery Lifestream](https://github.com/christianv/jquery-lifestream)
+[jQuery Validation](http://bassistance.de/jquery-plugins/jquery-plugin-validation/)
+[Log Helper](http://html5boilerplate.com)
+[Modernizr](http://www.modernizr.com/)
+[Shortcut JS](http://www.openjs.com/scripts/events/keyboard_shortcuts/)
+[SWF Object](http://code.google.com/p/swfobject/)
+
+All of these can be added to your manifest file for Sprockets like this
+
+    //= require backbone
+    //= require ie
+    //= require jquery.async
+    //= require jquery.cookie
+    //= require jquery.lifestream
+    //= require jquery.vaidate
+    //= require log
+    //= require modernizr
+    //= require shortcut
+    //= require swfobject
+
+Not only did I add a bunch of wonderfully awesome I also added a css reset that can be used, as well as a base variables... Although with sprockets currently you cannot include files with persistent variables, so I would highly recommend using SASS's built in `@import` to include files to do so include both files like so:
+
+    @import "variables.css.sass"
+    @import "reset.css.sass"
+
+
+## Thanks ##
+
+I hope you enjoy using this Rubygem, if you have any questions, issues, or feature requests please make them in the issues section, I'll be continually adding to this so please keep checking in on the progress.
 
 
 ## Contributing to Frontend Helpers ##
@@ -106,3 +153,5 @@ TODO: Write how to use this
 
 Copyright (c) 2011 Christopher Hein. See LICENSE.txt for
 further details.
+
+All javascript libraries are still copyrighted to their respective owners, this is just a way to easy add them to any project without having to deal with the files themselves.
