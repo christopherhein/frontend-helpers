@@ -1,6 +1,9 @@
 # Frontend Helpers #
 
-This is a collection of Rails 3.1 Helpers that I have compiled together into one nice neat special little gem... it'll handle doing things such as Meta tag creation, Facebook Open Graph Tag Creation, javascript integration for, Google Analytics, Chartbeat, Inspectlet, Mixpanel, Woopra, Kissmetrics, Quantcast, and Olark, as well I've packaged in a few of my favorite/most used javascript libraries for building amazing web apps, and last but not least, added a great `reset.css.sass` file that goes really nicely with my `variables.css.sass` file, for a basic clean view.
+HARD DEPENDENCY: HAML & SASS
+I do plan on making it work for both ERB & HAML but currently all my projects use both, so I haven't found the time to add this option.
+
+This is a collection of Rails 3.1 Helpers that I have compiled together into one nice neat special little gem... it'll handle doing things such as a few HTML5 helpers, Meta tag creation, Facebook Open Graph Tag Creation, javascript integration for, Google Analytics, Chartbeat, Inspectlet, Mixpanel, Woopra, Kissmetrics, Quantcast, and Olark, as well I've packaged in a few of my favorite/most used javascript libraries for building amazing web apps, and last but not least, added a great `reset.css.sass` file that goes really nicely with my `variables.css.sass` file, for a basic clean view.
 
 Try it on your next project, I'm sure you'll like it.
 
@@ -27,7 +30,7 @@ Then you can start editing them:
 
 ### HTML5 ###
 
-before you use the HTML5 HTML tag as Paul Irish  `application_controller.rb` add:
+before you use the HTML5 HTML tag as Paul Irish wrote for the HTML5 Boilerplate `application_controller.rb` add:
 
     include FrontendHelpers::Html5Helper
 
@@ -54,7 +57,7 @@ Say for instance you set the key `title`
 
     :title: "Chris Hein's Site"
 
-And on the homepage you liked that, but maybe on the about page you would like it to say `About Chris Hein` with this plugin that's really simple, in your action for your about page simple add:
+And on the homepage you liked that, but maybe on the about page you would like it to say `About Chris Hein` with this plugin that's really simple, in your action for your about page simple add an instance variable as so:
 
     @meta_title = "About Chris Hein"
 
@@ -101,7 +104,7 @@ Inside the `services.yml` you will find all of variables that should be set to u
 
 ### Assets ###
 
-As far as the assets and the all the included libraries I've added a few of my favorite and most used javascript libraries, those are:
+As far as the assets I've added a few of my favorite and most used javascript libraries, those are:
 
 [Backbone](http://documentcloud.github.com/backbone/)
 [Underscore](http://documentcloud.github.com/underscore/)
@@ -128,7 +131,7 @@ All of these can be added to your manifest file for Sprockets like this
     //= require shortcut
     //= require swfobject
 
-Not only did I add a bunch of wonderfully awesome I also added a css reset that can be used, as well as a base variables... Although with sprockets currently you cannot include files with persistent variables, so I would highly recommend using SASS's built in `@import` to include files to do so include both files like so:
+Not only did I add a bunch of wonderfully awesome javascript libs I also added a css reset that can be used, as well as a base variables... Although with sprockets currently you cannot include files with persistent variables, so I would highly recommend using SASS's built in `@import` to include files to do so include both files like so rename `application.css` to `application.css.sass` then add:
 
     @import "variables.css.sass"
     @import "reset.css.sass"
