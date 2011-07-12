@@ -125,7 +125,7 @@ All of these can be added to your manifest file for Sprockets like this
     //= require jquery.async
     //= require jquery.cookie
     //= require jquery.lifestream
-    //= require jquery.vaidate
+    //= require jquery.validate
     //= require log
     //= require modernizr
     //= require shortcut
