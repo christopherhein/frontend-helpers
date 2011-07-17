@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{frontend-helpers}
-  s.version = "0.0.2"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Christopher Hein"]
-  s.date = %q{2011-07-11}
+  s.date = %q{2011-07-17}
   s.description = %q{Large collection of useful Rails 3.1 helpers for SEO, Metatags, Facebook OG tags, integration for analytics services like google, woopra, olark, mixpanel and much much more...}
   s.email = %q{me@christopherhein.com}
   s.extra_rdoc_files = [
@@ -75,12 +75,15 @@ Gem::Specification.new do |s|
     "vendor/assets/javascripts/ie/reverse_zindex.js",
     "vendor/assets/javascripts/jquery.async.js",
     "vendor/assets/javascripts/jquery.cookie.js",
+    "vendor/assets/javascripts/jquery.easing.js",
     "vendor/assets/javascripts/jquery.lifestream.js",
+    "vendor/assets/javascripts/jquery.tablesorter.js",
     "vendor/assets/javascripts/jquery.validate.js",
     "vendor/assets/javascripts/log.js",
     "vendor/assets/javascripts/modernizr.js",
     "vendor/assets/javascripts/shortcut.js",
     "vendor/assets/javascripts/swfobject.js",
+    "vendor/assets/javascripts/tempo.js",
     "vendor/assets/stylesheets/reset.css.sass",
     "vendor/assets/stylesheets/variables.css.sass"
   ]
