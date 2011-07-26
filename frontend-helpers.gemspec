@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{frontend-helpers}
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Christopher Hein"]
-  s.date = %q{2011-07-17}
+  s.authors = [%q{Christopher Hein}]
+  s.date = %q{2011-07-26}
   s.description = %q{Large collection of useful Rails 3.1 helpers for SEO, Metatags, Facebook OG tags, integration for analytics services like google, woopra, olark, mixpanel and much much more...}
   s.email = %q{me@christopherhein.com}
   s.extra_rdoc_files = [
@@ -88,9 +88,9 @@ Gem::Specification.new do |s|
     "vendor/assets/stylesheets/variables.css.sass"
   ]
   s.homepage = %q{http://github.com/christopherhein/frontend-helpers}
-  s.licenses = ["MIT"]
-  s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
+  s.licenses = [%q{MIT}]
+  s.require_paths = [%q{lib}]
+  s.rubygems_version = %q{1.8.5}
   s.summary = %q{Collection of useful frontend helpers for Rails 3.1 applications.}
 
   if s.respond_to? :specification_version then
