@@ -20,9 +20,9 @@ module FrontendHelpers
 
     def meta(name, options)
       if !name.blank? && !setting(name).blank? || options.include?(name) && options[name]
-        options[:title] = ( options[name].present? ) ? "#{options[name]} #{setting(:title)}" : ""
+        options[:title] = ( !options[name].blank? ) ? "#{options[name]} #{setting(:title)}" : ""
         desc = (options.include?(name)) ? options[name] : setting(name)
-        haml_concat "<meta content='#{desc}' name='#{name.to_s}' />"
+        haml_concat "<meta content='#{setting(name)}' name='#{name.to_s}' />"
       end
     end
 
