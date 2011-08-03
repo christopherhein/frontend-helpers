@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{frontend-helpers}
-  s.version = "0.0.4"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Christopher Hein}]
-  s.date = %q{2011-07-26}
+  s.date = %q{2011-08-03}
   s.description = %q{Large collection of useful Rails 3.1 helpers for SEO, Metatags, Facebook OG tags, integration for analytics services like google, woopra, olark, mixpanel and much much more...}
   s.email = %q{me@christopherhein.com}
   s.extra_rdoc_files = [
@@ -67,9 +67,33 @@ Gem::Specification.new do |s|
     "test/dummy/script/rails",
     "test/frontend-helpers_test.rb",
     "test/test_helper.rb",
+    "vendor/assets/images/fancybox/blank.gif",
+    "vendor/assets/images/fancybox/fancy_close.png",
+    "vendor/assets/images/fancybox/fancy_loading.png",
+    "vendor/assets/images/fancybox/fancy_nav_left.png",
+    "vendor/assets/images/fancybox/fancy_nav_right.png",
+    "vendor/assets/images/fancybox/fancy_shadow_e.png",
+    "vendor/assets/images/fancybox/fancy_shadow_n.png",
+    "vendor/assets/images/fancybox/fancy_shadow_ne.png",
+    "vendor/assets/images/fancybox/fancy_shadow_nw.png",
+    "vendor/assets/images/fancybox/fancy_shadow_s.png",
+    "vendor/assets/images/fancybox/fancy_shadow_se.png",
+    "vendor/assets/images/fancybox/fancy_shadow_sw.png",
+    "vendor/assets/images/fancybox/fancy_shadow_w.png",
+    "vendor/assets/images/fancybox/fancy_title_left.png",
+    "vendor/assets/images/fancybox/fancy_title_main.png",
+    "vendor/assets/images/fancybox/fancy_title_over.png",
+    "vendor/assets/images/fancybox/fancy_title_right.png",
+    "vendor/assets/images/fancybox/fancybox-x.png",
+    "vendor/assets/images/fancybox/fancybox-y.png",
+    "vendor/assets/images/fancybox/fancybox.png",
     "vendor/assets/javascripts/backbone/backbone.js",
     "vendor/assets/javascripts/backbone/index.js",
     "vendor/assets/javascripts/backbone/underscore.js",
+    "vendor/assets/javascripts/fancybox/index.js",
+    "vendor/assets/javascripts/fancybox/jquery.easing.js",
+    "vendor/assets/javascripts/fancybox/jquery.fancybox.js",
+    "vendor/assets/javascripts/fancybox/jquery.mousewheel.js",
     "vendor/assets/javascripts/ie/dd_belatedpng.js",
     "vendor/assets/javascripts/ie/index.js",
     "vendor/assets/javascripts/ie/reverse_zindex.js",
@@ -84,13 +108,14 @@ Gem::Specification.new do |s|
     "vendor/assets/javascripts/shortcut.js",
     "vendor/assets/javascripts/swfobject.js",
     "vendor/assets/javascripts/tempo.js",
+    "vendor/assets/stylesheets/fancybox.css.scss",
     "vendor/assets/stylesheets/reset.css.sass",
     "vendor/assets/stylesheets/variables.css.sass"
   ]
   s.homepage = %q{http://github.com/christopherhein/frontend-helpers}
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.5}
+  s.rubygems_version = %q{1.8.6}
   s.summary = %q{Collection of useful frontend helpers for Rails 3.1 applications.}
 
   if s.respond_to? :specification_version then
