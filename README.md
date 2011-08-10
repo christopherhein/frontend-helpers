@@ -106,35 +106,46 @@ Inside the `services.yml` you will find all of variables that should be set to u
 
 As far as the assets I've added a few of my favorite and most used javascript libraries, those are:
 
-[Backbone](http://documentcloud.github.com/backbone/)
-[Underscore](http://documentcloud.github.com/underscore/)
-[DD Belated PNG](http://www.dillerdesign.com/experiment/DD_belatedPNG/)
-[jQuery Asynchronous Plugin](http://mess.genezys.net/jquery/jquery.async.php)
-[jQuery Cookie plugin](https://github.com/carhartl/jquery-cookie)
-[jQuery Lifestream](https://github.com/christianv/jquery-lifestream)
-[jQuery Validation](http://bassistance.de/jquery-plugins/jquery-plugin-validation/)
-[Log Helper](http://html5boilerplate.com)
-[Modernizr](http://www.modernizr.com/)
-[Shortcut JS](http://www.openjs.com/scripts/events/keyboard_shortcuts/)
-[SWF Object](http://code.google.com/p/swfobject/)
+* [Backbone](http://documentcloud.github.com/backbone/)
+* [Underscore](http://documentcloud.github.com/underscore/)
+* [jQuery Fancybox](http://fancybox.net)
+* [DD Belated PNG](http://www.dillerdesign.com/experiment/DD_belatedPNG/)
+* [jQuery Asynchronous Plugin](http://mess.genezys.net/jquery/jquery.async.php)
+* [jQuery Cookie plugin](https://github.com/carhartl/jquery-cookie)
+* [jQuery Easing plugin](http://gsgd.co.uk/sandbox/jquery/easing/)
+* [jQuery Lifestream](https://github.com/christianv/jquery-lifestream)
+* [jQuery Slides plugin](http://slidesjs.com)
+* [jQuery Tablesorter plugin](http://tablesorter.com)
+* [jQuery Validation](http://bassistance.de/jquery-plugins/jquery-plugin-validation/)
+* [Log Helper](http://html5boilerplate.com)
+* [Modernizr](http://www.modernizr.com/)
+* [Shortcut JS](http://www.openjs.com/scripts/events/keyboard_shortcuts/)
+* [SWF Object](http://code.google.com/p/swfobject/)
+* [Tempo](http://tempojs.com/)
 
 All of these can be added to your manifest file for Sprockets like this
 
     //= require backbone
+    //= require fancybox
     //= require ie
     //= require jquery.async
     //= require jquery.cookie
+    //= require jquery.easing
     //= require jquery.lifestream
+    //= require jquery.slides
+    //= require jquery.tablesorter
     //= require jquery.validate
     //= require log
     //= require modernizr
     //= require shortcut
     //= require swfobject
+    //= require tempo
 
 Not only did I add a bunch of wonderfully awesome javascript libs I also added a css reset that can be used, as well as a base variables... Although with sprockets currently you cannot include files with persistent variables, so I would highly recommend using SASS's built in `@import` to include files to do so include both files like so rename `application.css` to `application.css.sass` then add:
 
     @import "variables.css.sass"
     @import "reset.css.sass"
+    @import "fancybox.css.scss"
 
 
 ## Thanks ##
