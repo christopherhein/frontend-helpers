@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{frontend-helpers}
-  s.version = "0.0.6"
+  s.version = "0.0.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{Christopher Hein}]
-  s.date = %q{2011-08-10}
+  s.date = %q{2011-08-22}
   s.description = %q{Large collection of useful Rails 3.1 helpers for SEO, Metatags, Facebook OG tags, integration for analytics services like google, woopra, olark, mixpanel and much much more...}
   s.email = %q{me@christopherhein.com}
   s.extra_rdoc_files = [
