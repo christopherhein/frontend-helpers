@@ -17,12 +17,14 @@ Gem::Specification.new do |s|
     "README.md"
   ]
   s.files = [
+    ".rvmrc",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
     "MIT-LICENSE",
     "README.md",
     "Rakefile",
+    "app/views/layouts/mail.html.haml",
     "config/services.yml",
     "config/settings.yml",
     "frontend-helpers.gemspec",
@@ -87,6 +89,7 @@ Gem::Specification.new do |s|
     "vendor/assets/images/fancybox/fancybox-x.png",
     "vendor/assets/images/fancybox/fancybox-y.png",
     "vendor/assets/images/fancybox/fancybox.png",
+    "vendor/assets/javascripts/backbone/authtoken.js",
     "vendor/assets/javascripts/backbone/backbone.js",
     "vendor/assets/javascripts/backbone/index.js",
     "vendor/assets/javascripts/backbone/underscore.js",
