@@ -22,6 +22,11 @@ module Frontend
         copy_file "vendor/assets/stylesheets/variables.css.sass", "app/assets/stylesheets/variables.css.sass"
       end
 
+      def copy_email_template
+        say_status("copying", "Email Template", :green)
+        copy_file "app/views/layouts/mail.html.haml", "app/views/layouts/mail.html.haml"
+      end
+
     end
   end
 end

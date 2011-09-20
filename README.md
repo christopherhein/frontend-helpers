@@ -148,6 +148,14 @@ Not only did I add a bunch of wonderfully awesome javascript libs I also added a
     @import "fancybox.css.scss"
 
 
+### Email Template ###
+
+I've done my fair share of email template work... and I know it's not fun, but I have to say Sean Powell has done a great job compiling a great starting platform for constructing your HTML emails, so I've taken his code and added it as a base layout call `email.html.haml` so you can just include it when you are sending off you emails using `layout: "email"`
+
+* [HTML Email Boilerplate](http://htmlemailboilerplate.com/)
+* [HTML Email Boilerplate Github](https://github.com/seanpowell/Email-Boilerplate)
+
+
 ## Thanks ##
 
 I hope you enjoy using this Rubygem, if you have any questions, issues, or feature requests please make them in the issues section, I'll be continually adding to this so please keep checking in on the progress.

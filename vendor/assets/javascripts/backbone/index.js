@@ -1,2 +1,3 @@
-//= require ./underscore
 //= require ./backbone
+//= require ./underscore
+//= require ./authtoken
