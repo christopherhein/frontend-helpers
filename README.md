@@ -106,8 +106,10 @@ Inside the `services.yml` you will find all of variables that should be set to u
 
 As far as the assets I've added a few of my favorite and most used javascript libraries, those are:
 
-* [Backbone](http://documentcloud.github.com/backbone/)
-* [Underscore](http://documentcloud.github.com/underscore/)
+#### CHANGED!!! ####
+
+I've removed backbone from this repo, in favor of using the [backbone-rails gem](https://github.com/codebrew/backbone-rails) it gives you really nice generators and a few other really nice things.
+
 * [jQuery Fancybox](http://fancybox.net)
 * [DD Belated PNG](http://www.dillerdesign.com/experiment/DD_belatedPNG/)
 * [jQuery Asynchronous Plugin](http://mess.genezys.net/jquery/jquery.async.php)
@@ -125,7 +127,6 @@ As far as the assets I've added a few of my favorite and most used javascript li
 
 All of these can be added to your manifest file for Sprockets like this
 
-    //= require backbone
     //= require fancybox
     //= require ie
     //= require jquery.async
