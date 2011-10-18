@@ -27,18 +27,18 @@
       }
 
       h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {
-      color: red !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+      color: red !important;
       }
 
       h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
-      color: purple !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+      color: purple !important;
       }
 
       table td {
       border-collapse: collapse;
       }
 
-      .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important; } /* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+      .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important; }
 
   %body
     %table#backgroundTable{:border => "0", :cellpadding => "0", :cellspacing => "0"}
@@ -49,6 +49,3 @@
               %td{:width => "200"}
               %td{:width => "200"}= yield
               %td{:width => "200"}
-          %a{:href => "http://www.responsys.com/blogs/nsm/2010/07/feeling-blue-over-yahoo-email.html", :style => "color:red; text-decoration: none;", :target => "_blank", :title => "Feeling Blue Over Yahoo"}
-            %span{:style => "color: red;"} Here is the fix for Yahoo from Responsys/Smith Harmon
-          %img{:alt => "Your alt text", :height => "x", :src => "full path to image", :style => "display: block;", :title => "Your title text", :width => "x"}/
