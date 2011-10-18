@@ -25,7 +25,7 @@ module FrontendHelpers
 
     def inspectlet
       if service(:inspectlet, :setup) != false
-        haml_tag :script, {id: "inspectletjs"} do
+        haml_tag :script, {:id => "inspectletjs"} do
           haml_concat "var __insp = __insp || []; var __inspHost = (('https:' == document.location.protocol) ? 'https://www.inspectlet.com' : 'http://www.inspectlet.com'); document.write(unescape('%3Cscript id='inspsync' src='' + __inspHost + '/inspect_nojquery/3664049264.js' type='text/javascript'%3E%3C/script%3E'));"
         end
       end
