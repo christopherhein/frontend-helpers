@@ -19,7 +19,7 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Large collection of useful Rails 3.1 helpers for SEO, Metatags, Facebook OG tags, integration for analytics services like google, woopra, olark, mixpanel and much much more...}
   gem.email = "me@christopherhein.com"
   gem.authors = ["Christopher Hein"]
-  gem.version = "0.1.0"
+  gem.version = "0.1.1"
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new

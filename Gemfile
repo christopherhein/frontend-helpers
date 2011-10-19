@@ -3,8 +3,6 @@ source "http://rubygems.org"
 # Rails so we can extend it
 gem "rails", "~> 3.1.0"
 
-gem "sqlite3"
-
 gem "haml-rails"
 gem "sass-rails"
 
