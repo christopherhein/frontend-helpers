@@ -104,6 +104,6 @@ PLATFORMS
 DEPENDENCIES
   haml-rails
   jeweler
-  rails (~> 3.1.0)
+  rails (>= 3.1.0)
   sass-rails
   sprockets

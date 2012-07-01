@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "frontend-helpers"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Christopher Hein"]
-  s.date = "2012-02-02"
+  s.date = "2012-07-01"
   s.description = "Large collection of useful Rails 3.1 helpers for SEO, Metatags, Facebook OG tags, integration for analytics services like google, woopra, olark, mixpanel and much much more..."
   s.email = "me@christopherhein.com"
   s.extra_rdoc_files = [
@@ -122,20 +122,20 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rails>, ["~> 3.1.0"])
+      s.add_runtime_dependency(%q<rails>, [">= 3.1.0"])
       s.add_runtime_dependency(%q<haml-rails>, [">= 0"])
       s.add_runtime_dependency(%q<sass-rails>, [">= 0"])
       s.add_runtime_dependency(%q<sprockets>, [">= 0"])
       s.add_development_dependency(%q<jeweler>, [">= 0"])
     else
-      s.add_dependency(%q<rails>, ["~> 3.1.0"])
+      s.add_dependency(%q<rails>, [">= 3.1.0"])
       s.add_dependency(%q<haml-rails>, [">= 0"])
       s.add_dependency(%q<sass-rails>, [">= 0"])
       s.add_dependency(%q<sprockets>, [">= 0"])
       s.add_dependency(%q<jeweler>, [">= 0"])
     end
   else
-    s.add_dependency(%q<rails>, ["~> 3.1.0"])
+    s.add_dependency(%q<rails>, [">= 3.1.0"])
     s.add_dependency(%q<haml-rails>, [">= 0"])
     s.add_dependency(%q<sass-rails>, [">= 0"])
     s.add_dependency(%q<sprockets>, [">= 0"])
