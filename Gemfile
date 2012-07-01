@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 # Rails so we can extend it
-gem "rails", "~> 3.1.0"
+gem "rails", ">= 3.1.0"
 
 gem "haml-rails"
 gem "sass-rails"
